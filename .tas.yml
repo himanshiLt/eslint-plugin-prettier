@@ -1,0 +1,15 @@
+---
+framework: mocha
+preRun:
+     command:
+        - yarn install
+preMerge:
+  pattern:
+    - "./test/prettier.js"
+postMerge:
+  pattern:
+    - "./test/prettier.js"
+postRun:
+     command:
+        - yarn --version
+version: 1.0
